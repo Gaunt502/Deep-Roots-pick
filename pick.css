@@ -1,0 +1,157 @@
+/*Body edits*/
+body{
+    background-color: #FEFAE0;
+}
+/*The Header code for the site*/
+.header{
+    padding: 1rem;
+    background-color:#81A263;
+    display: flex;
+    justify-content: center
+}
+
+.logo{
+    height: 60px;
+    width:auto;
+    max-width: 100%;
+}
+
+.header p{
+    font-family:'Yellowtail', cursive;
+    font-size: 1.5rem;
+}
+
+/*The navigational bar*/
+.topnav{
+    background-color: #A2CA71;
+    overflow: hidden;
+}
+
+.topnav a {
+    float: left;
+    display: block;
+    color: #000;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+    font-family: 'Yellowtail', cursive;
+}
+
+/*Dropdwon menu*/
+.topnav .dropdown {
+    float: left;
+    overflow: hidden;
+}
+
+/*Dropdown Button*/
+.dropdown .dropbtn {
+    font-size: 17px;    
+    border: none;
+    outline: none;
+    color: #000;
+    padding: 14px 16px;
+    background-color: inherit;
+    font-family: 'Yellowtail', cursive;
+    margin: 0;
+}
+
+/*Dropdown content*/
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+/*Links inside the dropdown*/
+.dropdown-content a {
+    float: none;
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    text-align: left;
+    font-family: 'Yellowtail', cursive;
+}
+
+/*Hover effect for dropdown links*/
+.dropdown-content a:hover {
+    background-color: #ddd;
+}
+
+/*Show the dropdown menu on hover*/
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+/*Pick a Service*/
+.service-cart-wrapper {
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+    margin: 2rem;
+    position: relative;
+}
+
+#service-select {
+    padding: 0.5rem;
+    font-size: 1rem;
+}
+
+.cart-container {
+    position: relative;
+    display: inline-block;
+}
+
+#cart-icon {
+    font-size: 2rem;
+    cursor: pointer;
+}
+
+#cart-popup {
+    display: none;
+    position: absolute;
+    top: 120%;
+    right: 0;
+    background-color: #fff;
+    padding: 1rem;
+    border: 1px solid #ccc;
+    width: 220px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+    border-radius: 8px;
+    z-index: 1000;
+    white-space: pre-line;
+}
+
+.cart-container:hover #cart-popup {
+    display: block;
+}
+
+#checkout-btn {
+    background-color: green;
+    color: white;
+    border: none;
+    padding: 0.5rem 1rem;
+    border-radius: 6px;
+    margin-top: 0.5rem;
+    cursor: pointer;
+}
+#confirm-btn {
+    background-color: #3498db;
+    color: white;
+    border: none;
+    padding: 0.5rem 1rem;
+    border-radius: 6px;
+    cursor: pointer;
+}
+/*Footer*/
+.copyright-footer{
+    background-color:#99BC85;
+    color: black;
+    text-align: center;
+    padding: 1rem 0;
+    font-family: "Inter", sans-serif;
+    border-top: 1px solid #ccc;
+}

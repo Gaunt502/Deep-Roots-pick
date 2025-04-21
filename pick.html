@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DeepRoots/PickaService</title>
+    <link rel="stylesheet" href="pick.css">
+    <script src="pick.js"></script>
+</head>
+<body>
+    <!-- Display logo here -->
+    <div class="header">
+        <img src="img/treeLogo.png" alt="Tree Logo" class="logo">
+        <p>Deep Roots</p>
+    </div>
+    <!-- Navigation Bar -->
+    <div class="topnav">
+        <a href="#home">Home</a>
+        <a href="#about">About</a>
+        <!-- Dropdown Menu-->
+        <div class="dropdown">
+            <button class="dropbtn">Services</button>
+            <div class="dropdown-content">
+                <a href="#service1">Lawn Mowing</a>
+                <a href="#service2">Hedges</a>
+                <a href="#service3">Floral</a>
+                <a href="#service4">Weed Control</a>
+            </div>
+        </div>
+        <a href="#contact">Contact</a>
+        <a href="#pick">Pick a Service</a>
+    </div>
+    <main>
+        <!-- Service Picker + Cart System -->
+<div class="service-cart-wrapper">
+    <label for="service-select">Choose a Service:</label>
+    <select id="service-select">
+        <option value="" disabled selected>Select a service</option>
+        <option value="Lawn Mowing-25">Lawn Mowing - $25</option>
+        <option value="Hedge Trimming-40">Hedge Trimming - $40</option>
+        <option value="Floral Arrangement-30">Floral Arrangement - $30</option>
+        <option value="Weed Control-20">Weed Control - $20</option>
+    </select>
+    
+    <button id="confirm-btn">Confirm Service</button>
+
+    <!-- Cart Icon + Hover Popup -->
+    <div class="cart-container">
+    <div id="cart-icon">🛒</div>
+    <div id="cart-popup">
+        <p id="cart-details">Cart is empty</p>
+        <button id="checkout-btn">Checkout</button>
+    </div>
+    </div>
+</div>
+    </main>
+    <!--Footer-->
+    <footer class="copyright-footer">
+        <p>&copy; 2025 DeepRoots. All rights reserved</p>
+    </footer>
+</body>
+</html>
